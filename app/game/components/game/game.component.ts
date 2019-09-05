@@ -13,7 +13,7 @@ import { GameEngine } from '../../../models/GameEngine';
 })
 export class GameComponent implements OnDestroy {
     // Splash instruction component referenced, accesed for animating dismiss
-    @ViewChild(SplashInstructionComponent) splashInstruction: SplashInstructionComponent;
+    @ViewChild(SplashInstructionComponent, { static: false }) splashInstruction: SplashInstructionComponent;
     // Determines if the game has started
     hasStarted = false;
     // The death state of the player

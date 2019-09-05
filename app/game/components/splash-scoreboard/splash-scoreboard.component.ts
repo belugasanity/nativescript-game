@@ -10,7 +10,7 @@ import { screen } from 'tns-core-modules/platform';
 })
 export class SplashScoreBoardComponent implements OnInit {
 
-    @ViewChild('replayBtn') replayBtn: ElementRef;
+    @ViewChild('replayBtn', { static: false }) replayBtn: ElementRef;
 
     @Output() onReplay: EventEmitter<boolean> = new EventEmitter();
 

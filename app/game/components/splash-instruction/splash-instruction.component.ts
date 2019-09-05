@@ -8,7 +8,7 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 })
 export class SplashInstructionComponent {
 
-    @ViewChild('splash') splashImage: ElementRef;
+    @ViewChild('splash', { static: false }) splashImage: ElementRef;
 
     dismiss(): void {
         if (this.splashImage && this.splashImage.nativeElement) {

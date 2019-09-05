@@ -11,9 +11,9 @@ export class AppComponent {
 
     constructor(private page: Page) {
         // Hides the status bar and sets the background to the sky blue
-        this.page.actionBarHidden = true;
-        this.page.backgroundSpanUnderStatusBar = true;
-        this.page.backgroundColor = new Color('#4EC0CA');
+        // this.page.actionBarHidden = true;
+        // this.page.backgroundSpanUnderStatusBar = true;
+        // this.page.backgroundColor = new Color('#4EC0CA');
     }
 
 }
